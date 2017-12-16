@@ -1,0 +1,10 @@
+myfile = open('file.txt','w')
+myfile.write('Hello, world!\n')
+myfile.write('Hey\n')
+myfile.close()
+
+myfile = open('file.txt')
+print(myfile.readline(),end="")
+print(myfile.readline(),end="")
+print(myfile.readline())
+myfile.close()
