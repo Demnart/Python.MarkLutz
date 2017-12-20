@@ -23,3 +23,6 @@ print(v["name"])
 print(v["name"]["first"])
 v["job"].append("janitor")
 print(v)
+
+def hello():
+     print("hello")
