@@ -13,3 +13,5 @@ def adder1(**args):
     for i in arg[1:]:
         tot += args[i]
     return tot
+
+def adder2(**args):
