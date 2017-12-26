@@ -12,6 +12,10 @@ class Person:
 
     def percent(self,percent):
         self.pay = int(self.pay * (1 + percent))
+
+
+    def __str__(self):
+        return '[Person : {},{},{}]'.format(self.name,self.job,self.pay)
 if __name__ == "__main__" :
 
     bob = Person("Bob Smith")
@@ -20,3 +24,5 @@ if __name__ == "__main__" :
     print(bob.name,bob.job,bob.pay)
     print(sue.name,sue.job,sue.pay)
     print(sue.lastName(),bob.lastName())
+    print(bob)
+    print(sue)
